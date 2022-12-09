@@ -339,7 +339,7 @@ export default function Header() {
       <Row md={12} style={{ background: "#0F1016"}}>
       <Col md={12} xs={12} sm={12} style={{ marginTop: "20px", marginBottom: "20px", display: "flex", flexDirection: "column", alignItems: "center" }}>
           <div
-            style={{ display: "flex", flexDirection: "column", alignContent: "center",  marginTop: "10px", marginLeft: "10px" }}
+            style={{ display: "flex", flexDirection: "column", alignContent: "center",  marginTop: "10px"}}
           >
             <img src={Logo} alt="" height="40px" />
           </div>
