@@ -413,7 +413,15 @@ export default function Header() {
             <div style={{  marginTop: "20px" }}>
               {
                 referValid == 1 ? (
-                  <form onSubmit={handleSubmit}>
+                  <h3 style={{ color: "#c4d2fa" }}>ACCESS DENIED</h3>
+                  ) : null
+              }
+            </div>
+            <div>
+              {
+                referValid == 0 ? (
+                  <>
+                    <form onSubmit={handleSubmit}>
                           <div style={{ display: "flex", flexDirection: "column" }}>
                               <input 
                               value={refer}
@@ -432,14 +440,6 @@ export default function Header() {
                               <button type="submit" style={{ marginBottom: "20px", color: "#c4d2fa", background: "#383855", borderRadius: "5px", border: "0px" }} className='text-white px-6 py-2 mt-4'>Submit</button>
                           </div>
                       </form>
-                  ) : null
-              }
-            </div>
-            <div>
-              {
-                referValid == 0 ? (
-                  <>
-                    <h3 style={{ color: "#c4d2fa" }}>ACCESS DENIED</h3>
                 
                 </>
                 ) : null
